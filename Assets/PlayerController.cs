@@ -56,5 +56,9 @@ public class Player : MonoBehaviour
 
             Destroy(other.gameObject);
         }
+        else if (other.gameObject.CompareTag("Enemy"))
+        {
+            GameManager.instance.PlayerHitEnemy(other.gameObject);
+        }
     }
 }
