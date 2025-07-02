@@ -1,16 +1,42 @@
 using UnityEngine;
+using TMPro;
 
 public class GameManager : MonoBehaviour
 {
-    
+    public static GameManager instance;
+
     public GameObject foodPrefab;
     public int foodNumber = 29;
+
+    public TextMeshProUGUI scoreText;
+
+    private int score = 0;
+
+    void Awake()
+    {
+        if (instance == null)
+        {
+            instance = this;
+        }
+    }
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         SpawnAllFood();
+        UpdateScoreUI();
+    }
+
+    public void AddScore(int amount)
+    {
+        score += amount;
+        UpdateScoreUI();
+    }
+
+    void UpdateScoreUI()
+    {
+        scoreText.text = "SCORE: " + score;
     }
 
     void SpawnAllFood()
