@@ -17,7 +17,7 @@ public class GameManager : MonoBehaviour
     {
         Camera cam = Camera.main;
         float height = 2f * cam.orthograpicSize;
-        float widht = height * cam.aspect;
+        float width = height * cam.aspect;
 
         for (int i = 0; i < foodNumber; i++)
         {
