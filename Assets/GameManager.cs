@@ -55,16 +55,6 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D other)
-    {
-        if (other.gameObject.CompareTag("Food"))
-        {
-            GameManager.instance.AddScore(25);
-
-            Destroy(other.gameObject);
-        }
-    }
-
     // Update is called once per frame
     void Update()
     {
