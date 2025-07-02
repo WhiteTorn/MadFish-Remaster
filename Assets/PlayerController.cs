@@ -60,5 +60,9 @@ public class Player : MonoBehaviour
         {
             GameManager.instance.PlayerHitEnemy(other.gameObject);
         }
+        else if (other.gameObject.CompareTag("Shark"))
+        {
+            GameManager.instance.PlayerHitShark();
+        }
     }
 }
