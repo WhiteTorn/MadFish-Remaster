@@ -21,6 +21,18 @@ public class Player : MonoBehaviour
     
         float moveY = Input.GetAxisRaw("Vertical");
 
-        
+        // Rigidbody movement
+        Vector2 moveDirection = new Vector2(moveX, moveY).normalized;
+        rb.velocity = moveDirection * moveSpeed;
+
+        // make decisions
+        if (moveX > 0)
+        {
+            spriteRenderer.flipX = false;
+        }
+        else if (moveX < 0)
+        {
+            spriteRenderer.flipX = true;
+        }
     }
 }
