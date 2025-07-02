@@ -18,5 +18,9 @@ public class Player : MonoBehaviour
     void Update()
     {
         float moveX = Input.GetAxisRaw("Horizontal");
+    
+        float moveY = Input.GetAxisRaw("Vertical");
+
+        
     }
 }
