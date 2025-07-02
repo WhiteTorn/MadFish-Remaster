@@ -23,16 +23,28 @@ public class Player : MonoBehaviour
 
         // Rigidbody movement
         Vector2 moveDirection = new Vector2(moveX, moveY).normalized;
-        rb.velocity = moveDirection * moveSpeed;
+        rb.linearVelocity = moveDirection * moveSpeed;
 
         // make decisions
         if (moveX > 0)
         {
             spriteRenderer.flipX = false;
+            spriteRenderer.flipY = false;
+        }
+        else if (moveY > 0)
+        {
+            spriteRenderer.flipX = true;
+            spriteRenderer.flipY = false;
+        }
+        else if (moveY < 0)
+        {
+            spriteRenderer.flipX = false;
+            spriteRenderer.flipY = true;
         }
         else if (moveX < 0)
         {
             spriteRenderer.flipX = true;
+            spriteRenderer.flipY = true;
         }
     }
 }
