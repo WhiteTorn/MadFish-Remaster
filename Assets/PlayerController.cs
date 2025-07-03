@@ -62,7 +62,7 @@ public class Player : MonoBehaviour
         }
         else if (other.gameObject.CompareTag("Shark"))
         {
-            GameManager.instance.PlayerHitShark();
+            GameManager.instance.PlayerHitShark(other.gameObject);
         }
     }
 }

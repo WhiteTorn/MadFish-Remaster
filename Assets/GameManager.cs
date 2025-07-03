@@ -125,11 +125,13 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    public void PlayerHitShark()
+    public void PlayerHitShark(GameObject shark)
     {
         if (score >= scoreToDefeatShark)
         {
             GameWon();
+
+            Destroy(shark);
         }
         else
         {
