@@ -54,6 +54,7 @@ public class GameManager : MonoBehaviour
     {
         score += amount;
         UpdateScoreUI();
+        UpdateStory();
     }
 
     public void PlayerHitEnemy(GameObject enemy)
