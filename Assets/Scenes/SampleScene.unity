@@ -330,7 +330,7 @@ Camera:
   far clip plane: 1000
   field of view: 34
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 8
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -355,7 +355,7 @@ Transform:
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalPosition: {x: 0, y: 0, z: -19}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -744,16 +744,16 @@ RectTransform:
   m_GameObject: {fileID: 947850774}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.7, y: 0.7, z: 0.7}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 287557929}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 200, y: 50}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 0}
+  m_AnchoredPosition: {x: -56, y: -16}
+  m_SizeDelta: {x: 317.715, y: 65.9613}
+  m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &947850776
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -839,7 +839,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: -52.632416, z: -480.11725, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -1159,7 +1159,7 @@ GameObject:
   - component: {fileID: 1588016712}
   m_Layer: 0
   m_Name: Fish_1
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1314,7 +1314,7 @@ Transform:
   m_GameObject: {fileID: 1588016711}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0.36930513, w: 0.92930824}
-  m_LocalPosition: {x: -9.44, y: 0.68, z: 0}
+  m_LocalPosition: {x: -15.5, y: 0.68, z: 0}
   m_LocalScale: {x: 0.16164501, y: 0.17302169, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1428,14 +1428,14 @@ MonoBehaviour:
   foodPrefab: {fileID: 7703095824675625630, guid: 436383c916de3b148ae0550b1da74401, type: 3}
   enemyFishPrefab: {fileID: 3342156959576454096, guid: 898a25eb95bed0d44aea49f2452e7971, type: 3}
   sharkPrefab: {fileID: 8350225121065252347, guid: 0ceb7bde512c73d4cbe312dbc72678d6, type: 3}
-  enemyNumber: 5
-  foodNumber: 15
+  enemyNumber: 8
+  foodNumber: 30
   scoreText: {fileID: 933813130}
   storyText: {fileID: 947850776}
   gameOverUI: {fileID: 1644709847}
   gameWonUI: {fileID: 1400255689}
   scoreToEatEnemies: 300
-  scoreToDefeatShark: 2000
+  scoreToDefeatShark: 2500
 --- !u!4 &2042676825
 Transform:
   m_ObjectHideFlags: 0
