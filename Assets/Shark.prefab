@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 1271309486914955804}
   - component: {fileID: 5870664224569443945}
   - component: {fileID: 2366149708231780371}
+  - component: {fileID: -2351216780845101361}
   m_Layer: 0
   m_Name: Shark
   m_TagString: Shark
@@ -162,3 +163,16 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &-2351216780845101361
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8350225121065252347}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74872029f513c72459be3f45ee51673f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 1
