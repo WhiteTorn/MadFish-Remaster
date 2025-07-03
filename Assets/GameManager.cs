@@ -71,6 +71,7 @@ public class GameManager : MonoBehaviour
 
     void GameOver()
     {
+        storyText.text = "Dex has been defeated... Press 'R' to try again.";
         Debug.Log("Game Over!");
         gameOverUI.SetActive(true);
         Time.timeScale = 0f;
@@ -141,6 +142,7 @@ public class GameManager : MonoBehaviour
 
     void GameWon()
     {
+        storyText.text = "Dex is the true king of Ungu! You won! Press 'R' to play again.";
         gameWonUI.SetActive(true);
         Time.timeScale = 0f;
     }
@@ -152,6 +154,8 @@ public class GameManager : MonoBehaviour
 
     void UpdateStory()
     {
+        // This logic is fine, but it won't be called on the final frame,
+        // which is why we added text to GameWon() and GameOver().
         if (score <= 60)
         {
             storyText.text = "A long time ago, there was peace and bliss in the Kingdom of Ungu...";
@@ -168,11 +172,11 @@ public class GameManager : MonoBehaviour
         {
             storyText.text = "In 900 AD, the heir of Ungu was born: Dex of Ungu.";
         }
-        else if (score <= 2000)
+        else if (score < scoreToDefeatShark) // Changed to '< scoreToDefeatShark' for clarity
         {
             storyText.text = "Dex was small, but had the spirit of a true warrior...";
         }
-        else
+        else // score is >= 2000
         {
             storyText.text = "Dex grew stronger. The time has come to face Zako!";
         }
